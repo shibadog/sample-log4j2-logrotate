@@ -28,7 +28,8 @@
 				"vmware.vscode-boot-dev-pack",
 				"mhutchie.git-graph",
 				"DavidAnson.vscode-markdownlint",
-				"yzhang.markdown-all-in-one"
+				"yzhang.markdown-all-in-one",
+				"redhat.vscode-xml"
 			],
 			"settings": {
 				"cSpell.words": [
