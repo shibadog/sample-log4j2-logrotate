@@ -17,8 +17,8 @@
             <PatternLayout
                     pattern="%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} %-5level[$${spring:spring.application.name},%X{traceId},%X{spanId},%X{sampled}][%t] %C: %m%n"/>
             <Policies><!-- Policiesは必須。 ローテーションポリシー -->
-                <OnStartupTriggeringPolicy />
-                <SizeBasedTriggeringPolicy size="1 KB" />
+                <OnStartupTriggeringPolicy /> <!-- 起動時にすでにログがあったら退避する -->
+                <SizeBasedTriggeringPolicy size="1 KB" /> <!-- 指定容量に達した場合にローテーションする -->
             </Policies>
             <!-- <DefaultRolloverStrategy max="20"/> シンプルに最大保持数で指定することも可能。-->
             <DefaultRolloverStrategy><!-- 削除条件 -->
